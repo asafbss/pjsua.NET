@@ -27,11 +27,11 @@ namespace pjsua.NET
     {
 #if DEBUG
 
-        private const string _dll32bit = @"DLLS\pjsua-API--Win32-vc-Debug.dll";
+        private const string _dll32bit = @"pjsua-API--Win32-vc-Debug.dll";
 
 
 #else
-        private const string _dll32bit = @"DLLS\pjsua_API--Win32-vc-Release.dll";
+        private const string _dll32bit = @"pjsua_API--Win32-vc-Release.dll";
 
 #endif
 
