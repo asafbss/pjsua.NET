@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pjsua.NET", "pjsua.NET\pjsua.NET.csproj", "{43F39BBB-8038-4ADF-BCBA-4A87FB3197A8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC} = {FEE190C3-9C55-4C89-9079-577CA792C0CC}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pjsua-API", "pjsua-API\pjsua-API.vcxproj", "{FEE190C3-9C55-4C89-9079-577CA792C0CC}"
 EndProject
