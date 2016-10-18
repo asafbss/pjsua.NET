@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pjsua.NET", "pjsua.NET\pjsua.NET.csproj", "{43F39BBB-8038-4ADF-BCBA-4A87FB3197A8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pjsua_API", "pjsua_API\pjsua_API.vcxproj", "{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pjsua-API", "pjsua-API\pjsua-API.vcxproj", "{FEE190C3-9C55-4C89-9079-577CA792C0CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,16 +27,16 @@ Global
 		{43F39BBB-8038-4ADF-BCBA-4A87FB3197A8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{43F39BBB-8038-4ADF-BCBA-4A87FB3197A8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{43F39BBB-8038-4ADF-BCBA-4A87FB3197A8}.Release|Win32.ActiveCfg = Release|Any CPU
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Debug|Mixed Platforms.Build.0 = Debug|Win32
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Debug|Win32.ActiveCfg = Debug|Win32
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Debug|Win32.Build.0 = Debug|Win32
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Release|Any CPU.ActiveCfg = Release|Win32
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Release|Mixed Platforms.ActiveCfg = Release|Win32
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Release|Mixed Platforms.Build.0 = Release|Win32
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Release|Win32.ActiveCfg = Release|Win32
-		{AA2F2B0D-3CE3-422B-93C9-8D810847BDE4}.Release|Win32.Build.0 = Release|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Debug|Win32.Build.0 = Debug|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Release|Any CPU.ActiveCfg = Release|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Release|Win32.ActiveCfg = Release|Win32
+		{FEE190C3-9C55-4C89-9079-577CA792C0CC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

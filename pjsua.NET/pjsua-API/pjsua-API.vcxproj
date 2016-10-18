@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="API.c" />
+    <ClCompile Include="pjsua_app.c" />
+    <ClCompile Include="pjsua_app_common.c" />
+    <ClCompile Include="pjsua_app_config.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="API.h" />
+    <ClInclude Include="pjsua_app.h" />
+    <ClInclude Include="pjsua_app_common.h" />
+    <ClInclude Include="pjsua_app_config.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FEE190C3-9C55-4C89-9079-577CA792C0CC}</ProjectGuid>
+    <RootNamespace>pjsuaAPI</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\pjsua.NET\DLLS\</OutDir>
+    <TargetName>$(ProjectName)-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration)</TargetName>
+    <IntDir>.\output\$(ProjectName)-$(TargetCPU)-$(PlatformName)-vc$(VSVer)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\pjsua.NET\DLLS\</OutDir>
+    <TargetName>$(ProjectName)-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration)</TargetName>
+    <IntDir>.\output\$(ProjectName)-$(TargetCPU)-$(PlatformName)-vc$(VSVer)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../pjsip/pjmedia;../pjsip/pjnath;../pjsip/\pjsip;../pjsip/pjlib-util;../pjsip/pjlib;../pjsip/pjsip_libraries;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>../pjsip/libs/pjmedia-audiodev-i386-Win32-vc14-Debug.lib;../pjsip/libs/libsrtp-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjlib-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjmedia-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjnath-i386-Win32-vc14-Debug.lib;../pjsip/libs/libspeex-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjsua-lib-i386-Win32-vc14-Debug.lib;../pjsip/libs/libresample-i386-Win32-vc14-Debug.lib;../pjsip/libs/libgsmcodec-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjsip-core-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjsip-ua-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjlib-util-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjmedia-codec-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjsip-simple-i386-Win32-vc14-Debug.lib;../pjsip/libs/libilbccodec-i386-Win32-vc14-Debug.lib;Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\pjsua.NET\DLLS\$(ProjectName)-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).dll</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../pjsip/pjmedia;../pjsip/pjnath;../pjsip/\pjsip;../pjsip/pjlib-util;../pjsip/pjlib;../pjsip/pjsip_libraries;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>../pjsip/libs/pjmedia-audiodev-i386-Win32-vc14-Debug.lib;../pjsip/libs/libsrtp-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjlib-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjmedia-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjnath-i386-Win32-vc14-Debug.lib;../pjsip/libs/libspeex-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjsua-lib-i386-Win32-vc14-Debug.lib;../pjsip/libs/libresample-i386-Win32-vc14-Debug.lib;../pjsip/libs/libgsmcodec-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjsip-core-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjsip-ua-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjlib-util-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjmedia-codec-i386-Win32-vc14-Debug.lib;../pjsip/libs/pjsip-simple-i386-Win32-vc14-Debug.lib;../pjsip/libs/libilbccodec-i386-Win32-vc14-Debug.lib;Iphlpapi.lib;dsound.lib;dxguid.lib;netapi32.lib;mswsock.lib;ws2_32.lib;odbc32.lib;odbccp32.lib;ole32.lib;user32.lib;gdi32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\pjsua.NET\DLLS\$(ProjectName)-$(TargetCPU)-$(Platform)-vc$(VSVer)-$(Configuration).dll</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
