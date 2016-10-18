@@ -1,6 +1,6 @@
 # pjsua.NET
-This library will add the pjsua (PJSIP version 2.5.5) softphone the ability to integrate with .NET applications.
-
+This is a SIP library for .NET 4.5
+This library will add to pjsua (PJSIP version 2.5.5) softphone the ability to integrate with .NET applications.
 
 ----------------------------------------------------------------------------------------
 18/10/2016 - First update.
